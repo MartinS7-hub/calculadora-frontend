@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.tarjeta {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 640px;
+    align-self: flex-start;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+}
+
+.fila {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.fila input,
+.fila select,
+.fila button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+}
+
+.fila input {
+    flex: 1;
+    min-width: 100px;
+}
+
+.fila button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.fila button:hover {
+    background: #1d4ed8;
+}
+
+.resultado {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+.mensaje {
+    margin-top: 0.5rem;
+    color: #b91c1c;
+}
+
+.mensaje.aviso {
+    color: #92400e;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a2e;
+}
+
+#historial {
+    list-style: none;
+}
+
+#historial li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-family: monospace;
+}
+
+#historial li .fecha {
+    color: #64748b;
+    font-size: 0.8rem;
+}
